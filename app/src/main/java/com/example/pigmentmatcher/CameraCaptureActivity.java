@@ -71,7 +71,7 @@ public class CameraCaptureActivity extends AppCompatActivity {
         public void onResume(){
 
             super.onResume();
-            if (!cameraManager.hasCamera()) {
+            if (!cameraManager.hasCamera()){
                 Toast toast = Toast.makeText(myContext, "Sorry, your phone does not have a camera!", Toast.LENGTH_LONG);
                 toast.show();
                 finish();
